@@ -6,33 +6,29 @@
 
 html{
     font-family: sans-serif;
+    color: rgb(43, 141, 131);
 }
-
-
-
 
 
 
 /* HEADER */
 
 header{
-    border: solid 1px black;
     display: grid;
     grid-template-columns: 50px 1fr auto;
     padding: 5px;
+
 }
 
 header form input{
     margin: 20px 0 0 15px;
-    border: solid 1px grey;
+    border: solid 1px rgb(43, 141, 131);
     border-radius: 15px;
     padding: 5px;
     width: 250px;
+    
 }
 
-header ul{
-
-}
 
 header li{
 display: inline;
@@ -42,3 +38,185 @@ margin: 25px;
 header li img{
     border-radius: 50%;
 }
+
+header li a{
+    text-decoration: none;
+    color: rgb(43, 141, 131);
+}
+
+/* SECTION 1 */
+
+.section1{
+    display: grid;
+    grid-template-columns:200px 1fr 1fr 200px;
+    padding: 50px;
+    /* background-color: rgb(43, 141, 131); */
+    background-image: url(https://www.novartis.com/sites/www.novartis.com/files/styles/story_teaser/public/field/header-image/iStock_000017634876Large.jpg?itok=QJhqkvd7);
+    color: white;
+    font-family: sans-serif;
+}
+
+.section1 .purpose{
+text-align: center;
+margin: 10px;
+}
+.section1 .purpose h1{
+    margin: 15px;
+    }
+
+.section1 .welcome{
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    margin: 30px;
+}
+.section1 .welcome h2{
+    margin: 30px;
+    color: rgb(43, 141, 131);
+}
+
+.section1 .welcome button{
+    padding: 5px 30px;
+    border-radius: 15px;
+    background-color: rgb(43, 141, 131);
+    color: white;
+    border: solid 1px white;
+}
+
+.section1 .welcome button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* SECTION 2 */
+
+.section2{
+    text-align: center;
+    padding: 50px;
+}
+.section2 h1{
+    margin: 20px;
+}
+.section2 p{
+    margin: 10px;
+}
+.section2 button{
+    margin: 20px;
+    padding: 5px 50px;
+    border-radius: 15px;
+    background-color: rgb(43, 141, 131); 
+    list-style: none;
+    border-color: white;
+}
+.section2 button a{
+    color: white;
+}
+
+/* SECTION 3 */
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 50px;
+    background-color: rgb(43, 141, 131);
+    color: white;
+}
+
+.section3 img{
+    height: 150px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.section3 h2{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* SECTION 4 */
+.section4{
+    padding: 30px 300px;
+    color: rgb(43, 141, 131);
+}
+
+
+.section4 form .name-email-phone{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    margin: 20px 0;
+}
+
+.section4 form .name-email-phone input{
+    width: 178px;
+    border: solid 1px black;
+    height: 25px;  
+    border-color: rgb(43, 141, 131);
+}
+
+.section4 form .message textarea{
+    border: solid 1px rgb(43, 141, 131);
+}
+
+.section4 .send{
+    margin-top: 10px;
+    text-align: center;
+}
+.section4 .send button{
+    padding: 5px 50px;
+    border-radius: 15px;
+    background-color: rgb(43, 141, 131);
+    border-color: white;
+    color: white;
+}
+
+/* FOOTER */
+
+.footer{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color:rgb(43, 141, 131);
+    color: white;
+}
+
+.footer .images-footer img{
+    margin-bottom: 10px;
+  }
+
+.footer .images-footer .logo{
+  width: 50px;
+  height: 70px;
+}
+
+.footer .images-footer h3{
+    font-size: 15px;
+  }
+.footer li{
+    list-style: none;
+    margin: 10px 0;
+}
+.footer h2{
+    margin-bottom: 20px;
+}
+.footer h3{
+    color: black;
+}
+
+.footer li a{
+    color: white;
+    text-decoration: none;
+}
+ .footer .images-footer li{
+      display: inline;
+  }
+.footer .images-footer li img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
