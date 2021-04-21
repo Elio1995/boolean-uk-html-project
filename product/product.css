@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    color: rgb(43, 141, 131);
+}
+
+
+
+/* HEADER */
+
+header{
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    padding: 5px;
+    background-color: rgb(43, 141, 131);
+    color: white;
+}
+
+header form input{
+    margin: 20px 0 0 15px;
+    border: solid 1px rgb(43, 141, 131);
+    border-radius: 15px;
+    padding: 5px;
+    width: 250px;
+    
+}
+
+
+header li{
+display: inline;
+margin: 15px;
+}
+
+header li img{
+    border-radius: 50%;
+}
+
+header li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* SECTION 1 */
+
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 30px;
+}
+
+.section1 .product-purpose h1{
+    margin: 20px 0 10px 0;
+}
+
+.section1 .product-purpose li{
+    margin: 5px 0;
+}
+
+/* SECTION 2 */
+
+.section2{
+background-color:rgb(43, 141, 131);
+padding: 30px;
+}
+
+.section2 h1{
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+
+.section2 .testimonial{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 10px 150px;
+    color: white;
+}
+
+.section2 .testimonial .testimonial1,
+.section2 .testimonial .testimonial2{  
+    margin: 10px 80px;
+    background-color: white;
+    color: rgb(43, 141, 131);
+    padding: 20px;
+}
+
+.section2 .testimonial .testimonial1 h2,
+.section2 .testimonial .testimonial2 h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.section2 .testimonial .testimonial1 h3,
+.section2 .testimonial .testimonial2 h3{
+    font-size: 30px;
+}
+
+ 
+/* FOOTER */
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color:white;
+    color: white;
+}
+
+.footer .images-footer img{
+    margin-bottom: 10px;
+  }
+
+.footer .images-footer .logo{
+  width: 50px;
+  height: 70px;
+}
+
+.footer .images-footer h3{
+    font-size: 15px;
+    color:rgb(43, 141, 131);
+  }
+.footer li{
+    list-style: none;
+    margin: 10px 0;
+    color:rgb(43, 141, 131);
+}
+.footer h2{
+    margin-bottom: 20px;
+    color:rgb(43, 141, 131);
+}
+.footer h3{
+    color: black;
+}
+
+.footer li a{
+    color: rgb(43, 141, 131);
+    text-decoration: none;
+}
+ .footer .images-footer li{
+      display: inline;
+      color:rgb(43, 141, 131);
+  }
+.footer .images-footer li img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+

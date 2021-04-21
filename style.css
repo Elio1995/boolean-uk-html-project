@@ -32,7 +32,7 @@ header form input{
 
 header li{
 display: inline;
-margin: 25px;
+margin: 15px;
 }
 
 header li img{
@@ -173,7 +173,6 @@ margin: 10px;
 /* FOOTER */
 
 .footer{
-    border: solid 1px black;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     padding: 50px;

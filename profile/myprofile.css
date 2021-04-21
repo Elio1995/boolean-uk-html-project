@@ -9,6 +9,10 @@ html{
     color: rgb(43, 141, 131);
 }
 
+body{
+    list-style: none;
+}
+
 
 
 /* HEADER */
@@ -31,7 +35,7 @@ header form input{
 
 header li{
 display: inline;
-margin: 25px;
+margin: 15px;
 }
 
 header li img{
@@ -68,7 +72,7 @@ header li a{
 .section1 button{
     margin-top: 10px;
     padding: 5px 15px;
-    border-color: white;
+    border:none;
 }
 
 .section1 button a{
@@ -79,10 +83,10 @@ header li a{
 /* SECTION 2 */
 
 .section2{
-    border: solid 1px black;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 185px));
     padding: 30px 0 30px 50px;
+    background-color: rgb(43, 141, 131);
 
 }
 
@@ -91,8 +95,157 @@ header li a{
     margin-left: 20px;
     text-align: center;
     padding: 30px 0;
+    background-color: white;
 }  
 
 .section2 .card img{
     margin-bottom: 10px;
 }
+
+/* SECTION 3 */
+
+.section3{
+    border: solid 1px black;
+}
+
+.section3 .main-list{
+    margin: 60px 50px 40px 50px;
+    border-bottom: solid 1px rgb(155, 153, 153);
+}
+
+.section3 .main-list li{
+display: inline;
+margin: 40px;
+}
+
+.section3 .search-filter{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    margin: 60px 50px 40px 50px;
+}
+
+.section3 .search-filter .search input{
+    border: solid 1px rgb(43, 141, 131);
+    border-radius: 15px;
+    padding: 5px;
+    width: 250px;
+    background-color: rgb(212, 212, 212) ;
+}
+
+.section3 .search-filter .filter select{
+    border: solid 1px rgb(43, 141, 131);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+.section3 .dashboard{
+    border: solid 1px black;
+    margin: 30px 40px 30px 30px;
+}
+
+.section3 .dashboard .information{
+    /* margin: 10px 0; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 185px));
+    border-bottom: solid 1px black;
+    padding: 10px;
+    background-color: rgb(202, 202, 202);
+}
+
+.section3 .dashboard .dash{
+    margin: 10px 0 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 185px));
+    padding: 10px;
+}
+
+
+.section3 .dashboard .info .title{
+color: rgb(110, 110, 110);
+border-bottom: solid 1px rgb(161, 161, 161);
+margin: 30px;
+}
+
+.section3 .dashboard .info .details{
+    margin: 20px 0 0 30px;
+}
+.section3 .dashboard .info .price{
+    margin: 20px 0 0 30px;
+}
+
+
+.section3 .dashboard .dash h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.section3 .dashboard .dash p{
+    margin: 5px 0 10px 0;
+    font-size: 13px; 
+    color: grey;
+}
+.section3 .dashboard .dash a{
+    font-size: 13px; 
+    color: rgb(43, 141, 131);
+    text-decoration: none;
+}
+
+.section3 .dashboard .dash button{
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    background-color:rgb(43, 141, 131);
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color:rgb(43, 141, 131);
+    color: white;
+}
+
+.footer .images-footer img{
+    margin-bottom: 10px;
+  }
+
+.footer .images-footer .logo{
+  width: 50px;
+  height: 70px;
+}
+
+.footer .images-footer h3{
+    font-size: 15px;
+  }
+.footer li{
+    list-style: none;
+    margin: 10px 0;
+}
+.footer h2{
+    margin-bottom: 20px;
+}
+.footer h3{
+    color: black;
+}
+
+.footer li a{
+    color: white;
+    text-decoration: none;
+}
+ .footer .images-footer li{
+      display: inline;
+  }
+.footer .images-footer li img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
