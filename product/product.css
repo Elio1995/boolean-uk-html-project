@@ -10,6 +10,28 @@ html{
     color: rgb(43, 141, 131);
 }
 
+body{
+
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "main" 1fr
+    "footer" auto /
+    1fr;
+
+list-style: none;
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
 
 
 /* HEADER */
@@ -38,7 +60,18 @@ margin: 15px;
 }
 
 header li img{
+    transition: 0.5;
+    height: 40px; 
+    width: 40px;
+
+}
+
+header .profile img{
+    transition: 0.5;
     border-radius: 50%;
+    height: 40px; 
+    width: 40px;
+
 }
 
 header li a{
@@ -78,17 +111,28 @@ padding: 30px;
 
 .section2 .testimonial{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
     margin: 10px 150px;
     color: white;
 }
 
+.center-wrapper {
+    /* CHANGE ACCORDING TO DESIGN */
+    max-width: 1000px;
+
+    /* STANDARD CODE */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
 .section2 .testimonial .testimonial1,
 .section2 .testimonial .testimonial2{  
-    margin: 10px 80px;
+    margin: 20px;
     background-color: white;
     color: rgb(43, 141, 131);
-    padding: 20px;
+    padding: 10px;
 }
 
 .section2 .testimonial .testimonial1 h2,
@@ -151,6 +195,44 @@ padding: 30px;
     width: 30px;
     height: 30px;
 }
+
+
+
+@media screen and (max-width: 1020px) {
+    
+    body{
+        display: grid;
+        grid-template: 
+        "header main" 1fr
+        "footer footer" auto /
+        80px 1fr;
+    }
+
+    header form input{
+        width: 55px;
+    }
+
+    header{
+        display: block;
+        background-color: white;
+    }
+
+    header li img{
+        margin-top: 20px;
+    }
+
+    header li span{
+        display: none;
+    }
+
+    /* .section1{
+        background-color: rgb(43, 141, 131);
+        color: white;
+        padding: 20px;
+    } */
+}
+
+
 
 
 

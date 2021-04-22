@@ -10,7 +10,25 @@ html{
 }
 
 body{
+
+        display: grid;
+        grid-template: 
+        "header" 70px
+        "main" 1fr
+        "footer" auto /
+        1fr;
+    
     list-style: none;
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
 }
 
 
@@ -29,7 +47,7 @@ header form input{
     border: solid 1px rgb(43, 141, 131);
     border-radius: 15px;
     padding: 5px;
-    width: 250px;
+    width: 150px;
     
 }
 
@@ -39,8 +57,20 @@ margin: 15px;
 }
 
 header li img{
-    border-radius: 50%;
+    transition: 0.5;
+    height: 40px; 
+    width: 40px;
+
 }
+
+header .profile img{
+    transition: 0.5;
+    border-radius: 50%;
+    height: 40px; 
+    width: 40px;
+
+}
+
 
 header li a{
     text-decoration: none;
@@ -105,7 +135,6 @@ header li a{
 /* SECTION 3 */
 
 .section3{
-    border: solid 1px black;
 }
 
 .section3 .main-list{
@@ -140,7 +169,7 @@ margin: 40px;
 
 
 .section3 .dashboard{
-    border: solid 1px black;
+    border: solid 1px rgb(155, 155, 155);
     margin: 30px 40px 30px 30px;
 }
 
@@ -148,7 +177,7 @@ margin: 40px;
     /* margin: 10px 0; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 185px));
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px rgb(155, 155, 155);
     padding: 10px;
     background-color: rgb(202, 202, 202);
 }
@@ -161,18 +190,26 @@ margin: 40px;
 }
 
 
-.section3 .dashboard .info .title{
-color: rgb(110, 110, 110);
-border-bottom: solid 1px rgb(161, 161, 161);
-margin: 30px;
+.section3 .dashboard .title1,
+.section3 .dashboard .title2,
+.section3 .dashboard .title3,
+.section3 .dashboard .title4,
+.section3 .dashboard .title5{
+color: black;
+margin: 10px 30px;
 }
 
-.section3 .dashboard .info .details{
+.section3 .dashboard .details1,
+.section3 .dashboard .details2,
+.section3 .dashboard .details3,
+.section3 .dashboard .details4{
     margin: 20px 0 0 30px;
 }
-.section3 .dashboard .info .price{
+.section3 .dashboard .price{
     margin: 20px 0 0 30px;
 }
+
+
 
 
 .section3 .dashboard .dash h3{
@@ -249,3 +286,72 @@ margin: 30px;
 
 
 
+@media screen and (max-width: 930px) {
+    
+    body{
+        display: grid;
+        grid-template: 
+        "header main" 1fr
+        "footer footer" auto /
+        80px 1fr;
+    }
+
+    header form input{
+        width: 55px;
+    }
+
+    header{
+        display: block;
+    }
+
+    header li img{
+        margin-top: 20px;
+    }
+
+    header li span{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:1205px) {
+    .section3 .dash .price {
+        display: none;
+      }
+
+    .section3 .information .title5{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:1170px) {
+   .section3 .main-list li{
+       display: block;
+       text-align: center;
+   }
+    
+}
+
+@media screen and (max-width:1018px) {
+    .section3 .dash .details4 {
+        display: none;
+      }
+
+    .section3 .information .title4{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:914px) {
+    .section3 .dash .details3 {
+        display: none;
+      }
+
+    .section3 .information .title3{
+        display: none;
+    }
+    
+}

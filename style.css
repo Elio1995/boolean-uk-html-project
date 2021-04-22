@@ -10,6 +10,24 @@ html{
 }
 
 
+body{
+    display: grid;
+    grid-template: 
+    "header" 70px
+    "main" 1fr
+    "footer" auto /
+    1fr;
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
 
 /* HEADER */
 
@@ -17,7 +35,6 @@ header{
     display: grid;
     grid-template-columns: 50px 1fr auto;
     padding: 5px;
-
 }
 
 header form input{
@@ -25,40 +42,90 @@ header form input{
     border: solid 1px rgb(43, 141, 131);
     border-radius: 15px;
     padding: 5px;
-    width: 250px;
-    
+    width: auto;
+    transition: 0.5s;
+}
+header form input:hover{
+ transform: scale(1.1);
+ background-color:rgb(43, 141, 131);
+}
+header form input:active{
+    transform: scale(1.05);
+    background-color:white; 
 }
 
 
 header li{
 display: inline;
 margin: 15px;
+transition: 0.5s;
 }
 
+/* header li:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(43, 141, 131);
+} */
+
 header li img{
-    border-radius: 50%;
+    transition: 0.5;
+    height: 40px; 
+    width: 40px;
+
 }
+
+header .profile img{
+    transition: 0.5;
+    border-radius: 50%;
+    height: 40px; 
+    width: 40px;
+
+}
+ header li img:hover{
+    transform: scale(1.1);
+    background-color: rgb(43, 141, 131); 
+} 
 
 header li a{
     text-decoration: none;
     color: rgb(43, 141, 131);
+    transition: 0.5;
 }
+header li a:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(43, 141, 131);
+    }
+    header li a:active{
+        transform: scale(1.05);
+        background-color: rgb(43, 141, 131);
+        color: white;  
+    }
+
+    header li .profile{
+        transition: 0.5s;
+    }
+    header .profile:hover{
+        transform: scale(1.1);
+
+    }
 
 /* SECTION 1 */
 
 .section1{
     display: grid;
-    grid-template-columns:200px 1fr 1fr 200px;
-    padding: 50px;
+    grid-template-columns:1fr 300px 300px 1fr;
+    /* padding: 50px; */
     /* background-color: rgb(43, 141, 131); */
     background-image: url(https://www.novartis.com/sites/www.novartis.com/files/styles/story_teaser/public/field/header-image/iStock_000017634876Large.jpg?itok=QJhqkvd7);
     color: white;
     font-family: sans-serif;
+    padding: 30px 0;
 }
 
 .section1 .purpose{
 text-align: center;
-margin: 10px;
+/* margin: 10px; */
 }
 .section1 .purpose h1{
     margin: 15px;
@@ -66,7 +133,6 @@ margin: 10px;
 
 .section1 .welcome{
     text-align: center;
-    margin: 10px;
     background-color: white;
     margin: 30px;
 }
@@ -116,7 +182,7 @@ margin: 10px;
 
 .section3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 30px;
     padding: 50px;
     background-color: rgb(43, 141, 131);
@@ -136,19 +202,49 @@ margin: 10px;
 
 /* SECTION 4 */
 .section4{
-    padding: 30px 300px;
+    /* padding: 30px 300px; */
     color: rgb(43, 141, 131);
+    margin:
 }
 
+.post > * {
+    display: block;
+  }
+
+  .section4 h3{
+      text-align: center;
+      margin: 20px;
+  }
+
+  .center-wrapper {
+    /* CHANGE ACCORDING TO DESIGN */
+    max-width: 400px;
+
+    /* STANDARD CODE */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+  }
 
 .section4 form .name-email-phone{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 130px)); */
     margin: 20px 0;
 }
 
+.section4 input,
+.section4 textarea {
+  width: 100%;
+}
+
+.section4 textarea {
+  resize: vertical;
+}
+
 .section4 form .name-email-phone input{
-    width: 178px;
+    /* width: 178px; */
     border: solid 1px black;
     height: 25px;  
     border-color: rgb(43, 141, 131);
@@ -214,6 +310,54 @@ margin: 10px;
     width: 30px;
     height: 30px;
 }
+
+
+
+
+@media screen and (max-width: 930px) {
+    
+    body{
+        display: grid;
+        grid-template: 
+        "header main" 1fr
+        "footer footer" auto /
+        80px 1fr;
+    }
+
+    header form input{
+        width: 55px;
+    }
+
+    header{
+        display: block;
+    }
+
+    header li img{
+        margin-top: 20px;
+    }
+
+    header li span{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .section1 .purpose{
+        display: none;
+        }  
+    
+        .section1{
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+        }
+
+        .section1 .welcome{
+            padding: 20px 0;
+        }
+}
+
+
 
 
 
