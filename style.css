@@ -29,6 +29,7 @@ footer{
     grid-area: footer;
 }
 
+
 /* HEADER */
 
 header{
@@ -83,7 +84,6 @@ header .profile img{
 }
  header li img:hover{
     transform: scale(1.1);
-    background-color: rgb(43, 141, 131); 
 } 
 
 header li a{
@@ -93,13 +93,9 @@ header li a{
 }
 header li a:hover{
     transform: scale(1.1);
-    color: white;
-    background-color: rgb(43, 141, 131);
     }
     header li a:active{
         transform: scale(1.05);
-        background-color: rgb(43, 141, 131);
-        color: white;  
     }
 
     header li .profile{
@@ -147,12 +143,27 @@ text-align: center;
     background-color: rgb(43, 141, 131);
     color: white;
     border: solid 1px white;
+    transition: 0.5s;
+}
+.section1 .welcome button:hover{
+transform: scale(1.1);
+background-color: white;
 }
 
 .section1 .welcome button a{
     text-decoration: none;
     color: white;
 }
+
+.section1 .welcome button a span{
+transition: 0.5s;
+}
+.section1 .welcome button a span:hover{
+    transform: scale(1.1);
+    color: rgb(43, 141, 131); 
+}
+
+
 
 /* SECTION 2 */
 
@@ -169,13 +180,29 @@ text-align: center;
 .section2 button{
     margin: 20px;
     padding: 5px 50px;
+    border: none;
     border-radius: 15px;
     background-color: rgb(43, 141, 131); 
     list-style: none;
     border-color: white;
+    transition: 0.5s;
 }
+.section2 button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(43, 141, 131);
+    }
 .section2 button a{
+    text-decoration: none;
     color: white;
+    transition: 0.5s;
+}
+.section2 button a span{
+    transition: 0.5s;
+}
+.section2 button a span:hover{
+    transform: scale(1.1);
+    color: rgb(43, 141, 131);
 }
 
 /* SECTION 3 */
@@ -237,6 +264,17 @@ text-align: center;
 .section4 input,
 .section4 textarea {
   width: 100%;
+  transition: 0.5s;
+}
+.section4 input:hover,
+.section4 textarea:hover{
+ transform: scale(1.1);
+ background-color:rgb(43, 141, 131);
+}
+.section4 input:active,
+.section4 textarea:active{
+ transform: scale(1.05);
+ background-color:rgb(255, 255, 255);
 }
 
 .section4 textarea {
@@ -261,9 +299,16 @@ text-align: center;
 .section4 .send button{
     padding: 5px 50px;
     border-radius: 15px;
+    border: none;
     background-color: rgb(43, 141, 131);
     border-color: white;
     color: white;
+    transition: 0.5s;
+}
+.section4 .send button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(43, 141, 131);
 }
 
 /* FOOTER */

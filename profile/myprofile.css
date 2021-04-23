@@ -32,14 +32,12 @@ footer{
 }
 
 
-
 /* HEADER */
 
 header{
     display: grid;
     grid-template-columns: 50px 1fr auto;
     padding: 5px;
-
 }
 
 header form input{
@@ -47,14 +45,30 @@ header form input{
     border: solid 1px rgb(43, 141, 131);
     border-radius: 15px;
     padding: 5px;
-    width: 150px;
-    
+    width: auto;
+    transition: 0.5s;
 }
+header form input:hover{
+ transform: scale(1.1);
+ background-color:rgb(43, 141, 131);
+}
+header form input:active{
+    transform: scale(1.05);
+    background-color:white; 
+}
+
 
 header li{
 display: inline;
 margin: 15px;
+transition: 0.5s;
 }
+
+/* header li:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(43, 141, 131);
+} */
 
 header li img{
     transition: 0.5;
@@ -70,14 +84,32 @@ header .profile img{
     width: 40px;
 
 }
-
+ header li img:hover{
+    transform: scale(1.1);
+} 
 
 header li a{
     text-decoration: none;
     color: rgb(43, 141, 131);
+    transition: 0.5;
 }
+header li a:hover{
+    transform: scale(1.1);
+    }
+    header li a:active{
+        transform: scale(1.05);
+    }
 
-/* SECTION 1 */
+    header li .profile{
+        transition: 0.5s;
+    }
+    header .profile:hover{
+        transform: scale(1.1);
+
+    }
+
+
+ /* SECTION 1  */
 
 .section1{
     display: grid;
@@ -103,6 +135,10 @@ header li a{
     margin-top: 10px;
     padding: 5px 15px;
     border:none;
+    transition: 0.5s;
+}
+.section1 button:hover{
+    transform: scale(1.1);
 }
 
 .section1 button a{
@@ -126,7 +162,12 @@ header li a{
     text-align: center;
     padding: 30px 0;
     background-color: white;
-}  
+    transition: 0.5s;
+} 
+
+.section2 .card:hover{
+    transform: scale(1.25);
+}
 
 .section2 .card img{
     margin-bottom: 10px;
@@ -145,6 +186,12 @@ header li a{
 .section3 .main-list li{
 display: inline;
 margin: 40px;
+transition: 0.5s;
+}
+.section3 .main-list li:hover{
+    color: white;
+    background-color: rgb(43, 141, 131);
+    transform: scale(1.1);
 }
 
 .section3 .search-filter{
@@ -160,6 +207,13 @@ margin: 40px;
     width: 250px;
     background-color: rgb(212, 212, 212) ;
 }
+.section3 .search-filter .search input:hover{
+    transform: scale(1.1);
+   }
+   .section3 .search-filter .search input:active{
+       transform: scale(1.05);
+   }
+   
 
 .section3 .search-filter .filter select{
     border: solid 1px rgb(43, 141, 131);
@@ -234,6 +288,12 @@ margin: 10px 30px;
     border: none;
     background-color:rgb(43, 141, 131);
     color: white;
+    transition: 0.5s;
+}
+.section3 .dashboard .dash button:hover{
+    transform: scale(1.1);
+    color: rgb(43, 141, 131);
+    background-color: white;
 }
 
 
